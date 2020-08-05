@@ -1,0 +1,48 @@
+turn root
+#sudo su
+
+download wget and unzip packages
+#yum install wget unzip
+
+download terraform package
+#wget https://releases.hashicorp.com/terraform/0.12.29/terraform_0.12.29_linux_amd64.zip
+
+
+unzip terraform
+#unzip terraform_0.12.29_linux_amd64.zip
+
+check if your terminal can print colon--separated list of locations in you PATH
+
+#echo $PATH
+/sbin:/bin:/usr/sbin:/usr/bin
+
+
+move terraform directory to /usr/bin
+#mv terraform /usr/bin/
+
+
+
+
+verify installation:
+
+#terraform --help
+
+
+enable tab completion for terraform commands
+
+#terraform -install-autocomplete
+
+
+Installing AWS CLI
+
+prerequesites
+
+# yum install glibc groff less
+
+
+
+#curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+
+#unzip awscliv2.zip
+#./aws/install
+
